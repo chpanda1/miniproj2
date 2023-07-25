@@ -4,14 +4,29 @@ import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import Cookies from 'js-cookie';
+import { useNavigate } from "react-router-dom";
+import Swal from 'sweetalert2';
 
 function AdminLogin({setShow}) {
 
+  const navigate = useNavigate();
+  setShow = false;
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     if(data.get("username") === 'admin' && data.get("password") === 'admin123'){
-      return setShow = true;
+      Cookies.set('admin', "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9", { expires: 7 });
+      if(Cookies.get("admin") === "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"){
+        setShow = true;
+      }
+      navigate("/");
+    }else if(data.get("username") !== 'admin' || data.get("password") !== 'admin123'){
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Incorect Admin Login'
+      })
     }
     console.log({
       adminuser: data.get("username"),

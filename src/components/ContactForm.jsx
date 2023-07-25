@@ -5,6 +5,7 @@ import Messages from './Messages';
 import MessagesModal from './MessagesModal';
 import Typography from "@mui/material/Typography";
 import AdminLogin from './AdminLogin';
+import Cookies from 'js-cookie';
 
 const ContactForm = () => {
 
@@ -19,7 +20,6 @@ const ContactForm = () => {
     reset,
     formState: { errors }
   } = useForm();
-  
   const loadData = localStorage.getItem('Message') ? JSON.parse(localStorage.getItem('Message')) : [];
   const [emptyArr, setEmptyArr] = useState(loadData);
  
