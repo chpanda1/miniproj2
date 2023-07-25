@@ -22,7 +22,7 @@ function NavBar() {
   return (
 
     <Box sx={{ flexGrow: 1 }} component="nav">
-        <AppBar position="fixed" sx={{ backgroundColor: '#426F86'}}>
+        <AppBar position="static" sx={{ backgroundColor: '#426F86'}}>
             <Toolbar>
                 <IconButton
                 size="large"
@@ -39,8 +39,9 @@ function NavBar() {
                     <StyledLink to="/Jobs">Jobs</StyledLink>
                     <StyledLink to="/AboutUs">About Us</StyledLink>
                     <StyledLink to="/ContactUs">Contact Us</StyledLink>
+                    <StyledLink to="/AdminPage">Admin</StyledLink>
                 </Typography>
-                <Button color="inherit">Login</Button>
+                <StyledLink to="/Login">Login</StyledLink>
             </Toolbar>
         </AppBar>
     </Box>

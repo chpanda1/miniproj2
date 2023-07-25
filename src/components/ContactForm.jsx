@@ -1,7 +1,18 @@
+import React, {useEffect, useState, Component} from 'react';
 import { useForm } from 'react-hook-form';
 import Form from './Form.css';
+import Messages from './Messages';
+import MessagesModal from './MessagesModal';
+import Typography from "@mui/material/Typography";
+import AdminLogin from './AdminLogin';
 
 const ContactForm = () => {
+
+  const [show, setShow] = useState(false);
+  const [showModal, toggleShowModal] = useState(false);
+  const [updateProductData, setUpdateProductData] = useState({});
+  const [id, setId] = useState(0);
+  const dateId = Date.now();
   const {
     register,
     handleSubmit,
@@ -9,25 +20,47 @@ const ContactForm = () => {
     formState: { errors }
   } = useForm();
   
+  const loadData = localStorage.getItem('Message') ? JSON.parse(localStorage.getItem('Message')) : [];
+  const [emptyArr, setEmptyArr] = useState(loadData);
+ 
   const onSubmit = async (data) => {
-    const { name, email, subject, message } = data;
-    
-    console.log('Name: ', name);
-    console.log('Email: ', email);
-    console.log('Subject: ', subject);
-    console.log('Message: ', message);
+    const date = Date.now();
+    setId(date);
+    const { messageId, name, email, subject, message } = data;
+    alert(JSON.stringify(data))
+    setEmptyArr([...emptyArr, data]);
+    reset()
   };
+
+  useEffect(() => {
+    localStorage.setItem('Message', JSON.stringify(emptyArr));
+  }, [emptyArr]);
 
   return (
     <div className='ContactForm'>
-      <div className='container'>
+      <div className='container rounded-3 shadow-lg'>
+      <Typography component="h1" variant="h5" className='text-center fs-1'>
+          Contact Us
+        </Typography>
         <div className='row'>
           <div className='col-12 text-center'>
-            <div className='contactForm'>
+            <div className='contactForm p-3'>
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
-                <div className='row formRow'>
-                  <div className='col-6'>
+                <div className='row formRow mb-3'>
+                  <div className='col-9 invisible'>
+                    <input
+                      type='number'
+                      name='messageId'
+                      {...register('messageId', {
+                        setValueAs: id => parseInt(id),
+                      })}
+                      className='form-control formInput'
+                      placeholder='ID'
+                      value={id === 0 ?  dateId : id}
+                    ></input>
+                  </div>
+                  <div className='col-9'>
                     <input
                       type='text'
                       name='name'
@@ -43,7 +76,9 @@ const ContactForm = () => {
                     ></input>
                     {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
                   </div>
-                  <div className='col-6'>
+                </div>
+                <div className='row formRow mb-3'>
+                  <div className='col-9'>
                     <input
                       type='email'
                       name='email'
@@ -60,8 +95,8 @@ const ContactForm = () => {
                   </div>
                 </div>
                 {/* Row 2 of form */}
-                <div className='row formRow'>
-                  <div className='col'>
+                <div className='row formRow mb-3'>
+                  <div className='col-9'>
                     <input
                       type='text'
                       name='subject'
@@ -81,8 +116,8 @@ const ContactForm = () => {
                   </div>
                 </div>
                 {/* Row 3 of form */}
-                <div className='row formRow'>
-                  <div className='col'>
+                <div className='row formRow mb-3'>
+                  <div className='col-9'>
                     <textarea
                       rows={3}
                       name='message'
@@ -102,8 +137,24 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>      
+      {
+        show ? 
+        <Messages emptyArr={emptyArr} setEmptyArr={setEmptyArr} setUpdateProductData={setUpdateProductData} toggleShowModal={toggleShowModal}/>
+        :null
+      }
+      <MessagesModal
+      showModal = {showModal}
+      updateProductData = {updateProductData}
+      toggleShowModal = {toggleShowModal}
+      setEmptyArr = {setEmptyArr}
+      emptyArr={emptyArr}
+      /> 
+      <div className='invisible'>
+        <AdminLogin setShow={setShow}/> 
+      </div>     
     </div>
+
   );
 };
 
