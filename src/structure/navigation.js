@@ -13,5 +13,5 @@ export const nav = [
      { path:     "/aboutus",    name: "About",       element: <AboutUs />,      isMenu: true,     isPrivate: false  },
      { path:     "/contactus",    name: "Contact",       element: <ContactUs />,      isMenu: true,    isPrivate: false  },
      { path:     "/login",    name: "Login",       element: <Login />,      isMenu: false,    isPrivate: false  },
-     { path:     "/adminpage",  name: "AdminPage",     element: <AdminPage />,    isMenu: true,     isPrivate: true  },
+     // { path:     "/adminpage",  name: "AdminPage",     element: <AdminPage />,    isMenu: true,     isPrivate: true  },
 ]

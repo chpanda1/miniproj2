@@ -1,20 +1,20 @@
 import React, {useEffect, useState, Component} from 'react';
 import Messages from './Messages'
+import ContactForm from './ContactForm';
 
 function Admin() {
     const [updateProductData, setUpdateProductData] = useState({});
-    const [emptyArr, setEmptyArr] = useState(JSON.stringify(localStorage.getItem('Message')));
+    const [emptyArr, setEmptyArr] = useState(localStorage.getItem('Message'));
     const [showModal, toggleShowModal] = useState(false);
-
 
     const handleClick = () => {
         // setEmptyArr(JSON.stringify(localStorage.getItem('Message')));
-        alert(emptyArr);
+        // alert(emptyArr);
     }
   return (
     <div>
         <button onClick={handleClick}>Refresh</button>
-      {/* <Messages 
+        {/* <Messages 
         emptyArr={emptyArr} 
         setEmptyArr={setEmptyArr} 
         setUpdateProductData={setUpdateProductData} 

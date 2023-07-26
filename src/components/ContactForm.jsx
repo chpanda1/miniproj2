@@ -6,10 +6,10 @@ import MessagesModal from './MessagesModal';
 import Typography from "@mui/material/Typography";
 import AdminLogin from './AdminLogin';
 import Cookies from 'js-cookie';
+import { AuthData } from "../AuthWrapper";
 
 const ContactForm = () => {
-
-  const [show, setShow] = useState(true);
+  const { user } = AuthData();
   const [showModal, toggleShowModal] = useState(false);
   const [updateProductData, setUpdateProductData] = useState({});
   const [id, setId] = useState(0);
@@ -29,7 +29,7 @@ const ContactForm = () => {
     const { messageId, name, email, subject, message } = data;
     alert(JSON.stringify(data))
     setEmptyArr([...emptyArr, data]);
-    reset()
+    reset();
   };
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const ContactForm = () => {
   }, [emptyArr]);
 
   return (
-    <div className='ContactForm'>
+    <div className='ContactForm mb-5'>
       <div className='container rounded-3 shadow-lg'>
       <Typography component="h1" variant="h5" className='text-center fs-1 text-white'>
           Contact Us
@@ -139,7 +139,7 @@ const ContactForm = () => {
         </div>
       </div>      
       {
-        show ? 
+        user.isAuthenticated ? 
         <Messages emptyArr={emptyArr} setEmptyArr={setEmptyArr} setUpdateProductData={setUpdateProductData} toggleShowModal={toggleShowModal}/>
         :null
       }
@@ -149,10 +149,7 @@ const ContactForm = () => {
       toggleShowModal = {toggleShowModal}
       setEmptyArr = {setEmptyArr}
       emptyArr={emptyArr}
-      /> 
-      <div className='invisible'>
-        <AdminLogin show={show} setShow={setShow}/> 
-      </div>     
+      />   
     </div>
 
   );
