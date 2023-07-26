@@ -9,7 +9,7 @@ import Cookies from 'js-cookie';
 
 const ContactForm = () => {
 
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const [showModal, toggleShowModal] = useState(false);
   const [updateProductData, setUpdateProductData] = useState({});
   const [id, setId] = useState(0);
@@ -39,11 +39,11 @@ const ContactForm = () => {
   return (
     <div className='ContactForm'>
       <div className='container rounded-3 shadow-lg'>
-      <Typography component="h1" variant="h5" className='text-center fs-1'>
+      <Typography component="h1" variant="h5" className='text-center fs-1 text-white'>
           Contact Us
         </Typography>
         <div className='row'>
-          <div className='col-12 text-center'>
+          <div className='col-12 text-center mAxisX'>
             <div className='contactForm p-3'>
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
@@ -130,7 +130,7 @@ const ContactForm = () => {
                     {errors.message && <span className='errorMessage'>Please enter a message</span>}
                   </div>
                 </div>
-                <button className='submit-btn btn btn-primary' type='submit'>
+                <button className='submit-btn btn btn-primary mRight' type='submit'>
                   Submit
                 </button>
               </form>
@@ -151,7 +151,7 @@ const ContactForm = () => {
       emptyArr={emptyArr}
       /> 
       <div className='invisible'>
-        <AdminLogin setShow={setShow}/> 
+        <AdminLogin show={show} setShow={setShow}/> 
       </div>     
     </div>
 
