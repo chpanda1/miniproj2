@@ -14,7 +14,7 @@ function AdminLogin() {
           try {
                
                await login(formData.userName, formData.password)
-               navigate("/account")
+               navigate("/")
 
           } catch (error) {
 

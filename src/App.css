@@ -92,3 +92,43 @@
 .jcolor2{
   color: #068FFF;
 }
+.jcolor3{
+  color: #FFF;
+}
+
+.jbgcolor{
+  background-color: #4E4FEB;
+  color: #fff;
+}
+.jbgcolor2{
+  background-color: #068FFF;
+  color: #fff
+}
+
+.stickyPos {
+  position: sticky;
+}
+
+.jlogo {
+  height: 500px;
+}
+
+@media screen  and (max-width: 720px){
+
+  .jlogo {
+    height: 300px;
+  }
+
+  
+  
+}
+
+@media screen  and (max-width: 900px){
+
+  .jlogo {
+    height: 300px;
+  }
+
+  
+  
+}

@@ -1,6 +1,7 @@
-import { Link, Route, Routes, NavLink } from "react-router-dom";
+import { Link, Route, Routes, NavLink, Navigate } from "react-router-dom";
 import { AuthData } from "../AuthWrapper";
 import { nav } from "./navigation";
+import { AppBar } from '@mui/material'
 
 
 export const RenderRoutes = () => {
@@ -42,7 +43,10 @@ export const RenderRoutes = () => {
         }
         return (
              <div className="menu">
-                  { nav.map((r, i) => {
+                    <div className="logooo">
+                         <img src="/JEM2.png" alt="Kodie" height={'50px'}/>
+                    </div>
+                  {nav.map((r, i) => {
    
                        if (!r.isPrivate && r.isMenu) {
 
@@ -55,8 +59,8 @@ export const RenderRoutes = () => {
                                  <MenuItem key={i} r={r}/>
                             )
                        } else return false
-                  } )}
-   
+                  }                   
+                  )}
                   { user.isAuthenticated ?
                   <div className="menuItem"><NavLink to={'#'} onClick={logout}>Log out</NavLink></div>
                   :
