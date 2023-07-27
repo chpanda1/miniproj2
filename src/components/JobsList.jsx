@@ -8,7 +8,7 @@ import Custom from './Custom.css'
 function JobsList() {
   return (
     <div>
-      <div className="container-sm">
+      <div className="container-sm container-md container-lg">
         <h1 className='topic text-center'>We are Hiring!</h1>
         <p className='para text-center mx-10'>Ready to embrace the challenge of collaborating with global tech companies? Submit your CV now and explore exciting open positions below!</p>
         <div className="row">
@@ -23,7 +23,7 @@ function JobsList() {
           </div>
         </div>
       </div>
-      <div className="container-sm">
+      <div className="container-sm container-md container-lg">
         <h1 className='topic2 text-left'>JEM Employee Perks & Benefits</h1>
         <h3 className='para3 text-left'>Empowering People, Driving Success</h3>
         <h3 className='para3 text-left'>Caring for Our Team, Fueling Our Success</h3>

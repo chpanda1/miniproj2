@@ -38,7 +38,7 @@ const ContactForm = () => {
 
   return (
     <div className='ContactForm mb-5'>
-      <div className='container rounded-3 shadow-lg'>
+      <div className='container rounded-3 shadow-lg containeer'>
       <Typography component="h1" variant="h5" className='text-center fs-1 text-white'>
           Contact Us
         </Typography>

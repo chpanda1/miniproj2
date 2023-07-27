@@ -1,9 +1,10 @@
 import React from 'react'
+import AboutForm from '../components/AboutForm'
 
 function AboutUs() {
   return (
     <div>
-      About us
+      <AboutForm />
     </div>
   )
 }
