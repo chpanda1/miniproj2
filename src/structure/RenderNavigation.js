@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, NavLink } from "react-router-dom";
 import { AuthData } from "../AuthWrapper";
 import { nav } from "./navigation";
 
@@ -28,7 +28,16 @@ export const RenderRoutes = () => {
    
         const MenuItem = ({r}) => {
              return (
-                  <div className="menuItem"><Link to={r.path}>{r.name}</Link></div>
+                  <div className="menuItem"><NavLink 
+                  to={r.path}
+                  style={({ isActive, isPending }) => {
+                    return {
+                      fontSize: isActive ? "25px" : "",
+                      fontWeight: isActive ? "bold" : "",
+                      color: isPending ? "red" : "white",
+                    };
+                  }}
+                  >{r.name}</NavLink></div>
              )
         }
         return (
@@ -36,8 +45,10 @@ export const RenderRoutes = () => {
                   { nav.map((r, i) => {
    
                        if (!r.isPrivate && r.isMenu) {
+
                             return (
                                  <MenuItem key={i} r={r}/>
+
                             )
                        } else if (user.isAuthenticated && r.isMenu) {
                             return (
@@ -47,9 +58,18 @@ export const RenderRoutes = () => {
                   } )}
    
                   { user.isAuthenticated ?
-                  <div className="menuItem"><Link to={'#'} onClick={logout}>Log out</Link></div>
+                  <div className="menuItem"><NavLink to={'#'} onClick={logout}>Log out</NavLink></div>
                   :
-                  <div className="menuItem"><Link to={'login'}>Log in</Link></div> }
+                  <div className="menuItem"><NavLink 
+                  to={'login'}
+                  style={({ isActive, isPending }) => {
+                    return {
+                      fontSize: isActive ? "25px" : "",
+                      fontWeight: isActive ? "bold" : "",
+                      color: isPending ? "red" : "white",
+                    };
+                  }}
+                  >Log in</NavLink></div> }
              </div>
         )
    }

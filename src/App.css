@@ -1,3 +1,7 @@
+*{
+  font-family: "Exo 2","Alegreya Sans";
+}
+
 .header {
   background-color: #f1f1f1;
   padding: 20px;
@@ -23,7 +27,7 @@
 }
 
 .menu {
-  background-color: #000;
+  background-color: #2d2d32;
   text-align: center;
   padding: 15px 0;
 }
@@ -80,4 +84,11 @@
   margin: 0 auto;
   padding: 15px;
   color: #fff;
+}
+
+.jcolor{
+  color: #4E4FEB;
+}
+.jcolor2{
+  color: #068FFF;
 }

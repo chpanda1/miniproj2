@@ -14,4 +14,5 @@ export const nav = [
      { path:     "/contactus",    name: "Contact",       element: <ContactUs />,      isMenu: true,    isPrivate: false  },
      { path:     "/login",    name: "Login",       element: <Login />,      isMenu: false,    isPrivate: false  },
      // { path:     "/adminpage",  name: "AdminPage",     element: <AdminPage />,    isMenu: true,     isPrivate: true  },
+     
 ]
