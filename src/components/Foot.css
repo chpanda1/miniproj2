@@ -31,15 +31,15 @@
 }
 
 a {
-    color: rgb(175,175,179);
+    color: rgb(175, 175, 179);
     text-decoration: none;
 }
 
-.socialMedia i{
+.socialMedia i {
     width: 80%;
 }
 
-.sb_footer-links-div h4{
+.sb_footer-links-div h4 {
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 0.9rem;
@@ -80,19 +80,19 @@ hr {
 .sb_footer-copyright p {
     font-size: 13px;
     line-height: 15px;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-weight: 600;
 }
 
 @media screen and (max-width: 850px) {
-        .sb_footer-heading h1 {
-            font-size: 44px;
-            line-height: 50px;
-        }
+    .sb_footer-heading h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    .sb_footer-heading h1{
+    .sb_footer-heading h1 {
         font-size: 34px;
         line-height: 42px;
     }
@@ -127,6 +127,3 @@ hr {
         line-height: 38px;
     }
 }
-
-
-
