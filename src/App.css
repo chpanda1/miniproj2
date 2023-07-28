@@ -113,12 +113,20 @@
   height: 500px;
 }
 
+.jlogo1 {
+
+}
+
+
 @media screen  and (max-width: 720px){
 
   .jlogo {
     height: 300px;
   }
 
+  .jlogo1 {
+    width: 350px;
+  }
   
   
 }
@@ -129,6 +137,9 @@
     height: 300px;
   }
 
-  
+  .jlogo1 {
+    width: 350px;
+    height: 300px;
+  }  
   
 }

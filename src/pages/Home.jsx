@@ -15,6 +15,15 @@ function Home() {
         </div>
       </div>
       <div className='row'>
+        <div className='col-lg-6 col-md-6 p-3'>
+          <img src="office.jpg" alt="" className='jlogo1'/>
+        </div>
+        <div className='col-lg-6 col-md-6 p-3 mt-3 text-center'>
+          <h1 className='jcolor'>Welcome to JEM Web Page Services!</h1>
+          <p className='fs-6 jcolor2'>We are a leading web design and development company dedicated to helping businesses establish a strong online presence. With our team of skilled professionals, we create stunning websites that not only showcase your brand but also drive results.</p>
+        </div>
+      </div>
+      <div className='row'>
         <div className='col-lg-6 col-md-6 text-start jbgcolor'>
           <h1>Mission  </h1>
           <p className='fs-6 jcolor3'>"Our mission is to empower businesses and individuals with innovative web services that enhance their online presence, boost productivity, and drive success. Through our cutting-edge technology, exceptional customer service, and a deep understanding of our clients' needs, we strive to deliver reliable, scalable, and tailored solutions that exceed expectations."</p>
