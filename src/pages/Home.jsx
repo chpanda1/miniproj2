@@ -36,7 +36,7 @@ function Home() {
       <div className='row'>
         <div className='col-lg-6 col-md-6 text-start'>
           <div className='team-item jheight'>            
-            <h1 className='jcolor'>Mission  </h1>
+            <h1 className='text-bolder'>Mission  </h1>
             <div className='team-info'>
             <p className='fs-6 jcolor3'>"Our mission is to empower businesses and individuals with innovative web services that enhance their online presence, boost productivity, and drive success. Through our cutting-edge technology, exceptional customer service, and a deep understanding of our clients' needs, we strive to deliver reliable, scalable, and tailored solutions that exceed expectations."</p>
             </div>
@@ -46,7 +46,7 @@ function Home() {
         </div>
         <div className='col-lg-6 col-md-6  text-end'>
           <div className='team-item jheight'>            
-            <h1 className='jcolor'>Vission  </h1>
+            <h1 className='jcolor'>Vision  </h1>
             <div className='team-info'>
             <p className='fs-6 jcolor3'>"As a leading web services provider, our vision is to be the preferred choice for businesses seeking transformative digital solutions. We envision a future where our expertise in web design, development, hosting, and digital marketing drives growth and enables our clients to thrive in the digital realm. By fostering a culture of creativity, collaboration, and continuous learning, we aim to stay at the forefront of technological advancements and shape the digital landscape."</p>
             </div>
