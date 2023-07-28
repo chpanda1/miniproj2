@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='footer'>
             <div className='sb_footer section_padding'>
                 <div className='sb_footer-links'>
-                    <div className='sb_footer-links-dv'>
+                    <div className='sb_footer-links-div'>
                         <h4>For Business</h4>
                         <a href="/employer">
                             <p>Employer</p>
@@ -52,10 +52,10 @@ const Footer = () => {
                     <div className='sb_footer-links-div'>
                         <h4>Coming Soon!</h4>
                         <div className='socialMedia'>
-                            <p><i class="materials-icon"><TwitterIcon /></i></p>
-                            <p><i class="materials-icon"><FacebookIcon /></i></p>
-                            <p><i class="materials-icon"><LinkedInIcon /></i></p>
-                            <p><i class="materials-icon"><InstagramIcon /></i></p>
+                            <p><i class="materials-icon"><TwitterIcon /> @JemCorp</i></p>
+                            <p><i class="materials-icon"><FacebookIcon /> @JemCorp</i></p>
+                            <p><i class="materials-icon"><LinkedInIcon /> @JemCorp</i></p>
+                            <p><i class="materials-icon"><InstagramIcon /> @JemCorp</i></p>
                         </div>
                     </div>
                 </div>
