@@ -34,13 +34,13 @@ function Messages({emptyArr, setEmptyArr, setUpdateProductData, toggleShowModal}
     <div className='p-3'>
         <TableContainer component={Paper} className='bg-info-subtle'>
             <Table sx={{ minWidth: 1 }} aria-label="simple table">
-                <TableHead className='bg-primary text-white'>
+                <TableHead className='jjbgcolor'>
                     <TableRow>
-                        <TableCell align="center">Name</TableCell>
-                        <TableCell align="center">Email</TableCell>
-                        <TableCell align="center">Subject</TableCell>
-                        <TableCell align="center">Message</TableCell>
-                        <TableCell colSpan={2} align="center">Actions</TableCell>
+                        <TableCell align="center" className=' text-white'>Name</TableCell>
+                        <TableCell align="center" className=' text-white'>Email</TableCell>
+                        <TableCell align="center" className=' text-white'>Subject</TableCell>
+                        <TableCell align="center" className=' text-white'>Message</TableCell>
+                        <TableCell colSpan={2} align="center" className=' text-white'>Actions</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>

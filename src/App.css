@@ -117,6 +117,10 @@
 
 }
 
+div .jheight {
+  height: 320px;
+  overflow-wrap: break-word;
+}
 
 @media screen  and (max-width: 720px){
 
@@ -128,7 +132,10 @@
     width: 350px;
   }
   
-  
+  div .jheight {
+    height: 500px;
+    overflow-wrap: break-word;
+  }
 }
 
 @media screen  and (max-width: 900px){
@@ -140,6 +147,11 @@
   .jlogo1 {
     width: 350px;
     height: 300px;
-  }  
+  }
+  
+  div .jheight {
+    height: 500px;
+    overflow-wrap: break-word;
+  }
   
 }
