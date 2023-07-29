@@ -21,7 +21,7 @@ function Home() {
           <br />
           <br />
           <h4>Need a Website for your startup?</h4>
-          <h3><span className='fs-1 font-weight-bold jcolor'>COME! CONTACT US!</span><br/>We provide <br /><span className='fs-1 font-weight-bold jcolor'>HIGH QUALITY</span><br /> Web Services</h3>
+          <h3><span className='fs-1 font-weight-bold jcolor'>CONTACT US!</span><br/>We provide <br /><span className='fs-1 font-weight-bold jcolor'>HIGH QUALITY</span><br /> Web Services</h3>
         </div>
       </div>
       <div className='row'>
@@ -29,8 +29,8 @@ function Home() {
           <img src="office.jpg" alt="" className='jlogo1'/>
         </div>
         <div className='col-lg-6 col-md-6 p-3 mt-3 text-center'>
-          <h1 className='jcolor'>Welcome to JEM Web Page Services!</h1>
-          <p className='fs-6 jcolor2'>We are a leading web design and development company dedicated to helping businesses establish a strong online presence. With our team of skilled professionals, we create stunning websites that not only showcase your brand but also drive results.</p>
+          <h1 className=''>Welcome to JEM Web Page Services!</h1>
+          <p className='fs-6'>We are a leading web design and development company dedicated to helping businesses establish a strong online presence. With our team of skilled professionals, we create stunning websites that not only showcase your brand but also drive results.</p>
         </div>
       </div>
       <div className='row'>
@@ -46,7 +46,7 @@ function Home() {
         </div>
         <div className='col-lg-6 col-md-6  text-end'>
           <div className='team-item jheight'>            
-            <h1 className='jcolor'>Vision  </h1>
+            <h1 className=''>Vision  </h1>
             <div className='team-info'>
             <p className='fs-6 jcolor3'>"As a leading web services provider, our vision is to be the preferred choice for businesses seeking transformative digital solutions. We envision a future where our expertise in web design, development, hosting, and digital marketing drives growth and enables our clients to thrive in the digital realm. By fostering a culture of creativity, collaboration, and continuous learning, we aim to stay at the forefront of technological advancements and shape the digital landscape."</p>
             </div>
