@@ -1,5 +1,5 @@
 import React from 'react'
-import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -52,7 +52,7 @@ const Footer = () => {
                     <div className='sb_footer-links-div'>
                         <h4>Coming Soon!</h4>
                         <div className='socialMedia'>
-                            <p><i class="materials-icon"><TwitterIcon /> @JemCorp</i></p>
+                            <p><i class="materials-icon"><GitHubIcon /> @JemCorp</i></p>
                             <p><i class="materials-icon"><FacebookIcon /> @JemCorp</i></p>
                             <p><i class="materials-icon"><LinkedInIcon /> @JemCorp</i></p>
                             <p><i class="materials-icon"><InstagramIcon /> @JemCorp</i></p>
