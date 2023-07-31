@@ -7,7 +7,7 @@ import Custom from './Custom.css'
 
 function JobsList() {
   return (
-    <div>
+    <div className='pb-5'>
       <div className="container-sm">
         <div className="row">
           <div className="col-lg-1"></div>

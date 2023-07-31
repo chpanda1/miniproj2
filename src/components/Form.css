@@ -3,12 +3,16 @@ span {
 }
 .containeer {
     margin-top: 150px;
-    background-color: #426f86b0;
+    background-color: #2d2d32;
 }
-/* .mAxisX {
+.mAxisX {
     margin-left: 15%;
     margin-right: 25%;
 }
 .mRight{
     margin-right: 30%;
-} */
+}
+
+.jjbgcolor {
+    background-color: #2d2d32;
+}
