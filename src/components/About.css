@@ -21,6 +21,10 @@
     color: white;
 }
 
+.team-item:hover p {
+    color: white;
+}
+
 .team-item:hover i {
     color: white;
 }
@@ -50,7 +54,8 @@
 }
 
 .team-info p {
-    font-style: italic;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
 }
 
 .team-info::after {
@@ -59,7 +64,6 @@
     background: -o-linear-gradient(135deg, #6b02ff 0%, #985bef 100%);
     background: -moz-linear-gradient(135deg, #6b02ff 0%, #985bef 100%);
     background: linear-gradient(135deg, #6b02ff 0%, #985bef 100%);
-
     display: inline-block;
     vertical-align: middle;
     content: '';
@@ -80,11 +84,12 @@
 
 ul.team-icon {
     margin-top: 25px;
+    padding: 5px;
 }
 
 ul.team-icon li {
     display: inline-block;
-    margin: 0 3px;
+    margin: 5px 5px;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;

@@ -6,6 +6,7 @@ function AdminPage() {
   return (
     <div>
       <ContactForm />
+      <img src="tech4.jpg" alt="" />
     </div>
   )
 }

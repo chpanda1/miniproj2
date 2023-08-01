@@ -1,9 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import "./About.css"
+import styled from "styled-components";
+
+const Button = styled.button`
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+  padding: 5px 30px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+`;
 
 function AboutForm() {
     let message = `JEM Web Services is poised to become a prominent player in the website creation industry.`;
@@ -25,15 +36,16 @@ function AboutForm() {
                             <h3>JASPER NAVALES</h3>
                             <div className='team-info'>
                                 <p>Full Stack Developer</p>
-                                <p>Jasper is Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium quia a tempore illo odit nisi sint aliquam deserunt maiores eos aspernatur asperiores ex commodi doloremque, similique iste accusamus accusantium repellat?</p>
+                                <p>I am a Full-stack web developer from Mandaluyong, Metro Manila, Philippines. Currently studying to be a full time Full-stack developer at Kodego.</p>
+                                <p>I love working on Web Development and Deep Learning. My goal is to build highly performant websites that solve real-world problems and provide users with an awesome experience.</p>
 
                                 <ul className='team-icon'>
 
                                     <li><a href="#" className='twitter'>
-                                        <i class="materials-icon"><TwitterIcon /></i>
+                                        <i class="materials-icon"><FacebookOutlinedIcon /></i>
                                     </a></li>
                                     <li><a href="#" className='facebook'>
-                                        <i class="materials-icon"><FacebookOutlinedIcon /></i>
+                                        <i class="materials-icon"><InstagramIcon /></i>
                                     </a></li>
                                     <li><a href="#" className='github'>
                                         <i class="materials-icon"><GitHubIcon /></i>
@@ -41,6 +53,9 @@ function AboutForm() {
 
                                 </ul>
                             </div>
+                            <a href="https://chpanda1.github.io" target="_blank">
+                                <Button> My Portfolio </Button>
+                            </a>
                         </div>
                     </div>
 
@@ -50,15 +65,15 @@ function AboutForm() {
                             <h3>ELAINE TAÑADA</h3>
                             <div className='team-info'>
                                 <p>Full Stack Developer</p>
-                                <p>Elaine is Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium quia a tempore illo odit nisi sint aliquam deserunt maiores eos aspernatur asperiores ex commodi doloremque, similique iste accusamus accusantium repellat?</p>
+                                <p>As a passionate full-stack developer, I am driven by the art of crafting elegant and functional applications that seamlessly combine front-end and back-end technologies. With a relentless pursuit of innovation and a love for problem-solving, consistently delivers robust solutions that elevate user experiences and push the boundaries of web development.</p>
 
                                 <ul className='team-icon'>
 
                                     <li><a href="#" className='twitter'>
-                                        <i class="materials-icon"><TwitterIcon /></i>
+                                        <i class="materials-icon"><FacebookOutlinedIcon /></i>
                                     </a></li>
                                     <li><a href="#" className='facebook'>
-                                        <i class="materials-icon"><FacebookOutlinedIcon /></i>
+                                        <i class="materials-icon"><InstagramIcon /></i>
                                     </a></li>
                                     <li><a href="#" className='github'>
                                         <i class="materials-icon"><GitHubIcon /></i>
@@ -66,6 +81,9 @@ function AboutForm() {
 
                                 </ul>
                             </div>
+                            <a href="https://elainetanada.github.io/eportfolio.github.io/" target="_blank">
+                                <Button> My Portfolio </Button>
+                            </a>
                         </div>
                     </div>
 
@@ -75,15 +93,15 @@ function AboutForm() {
                             <h3>MARK FERNANDEZ</h3>
                             <div className='team-info'>
                                 <p>Full Stack Developer</p>
-                                <p>Mark is Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium quia a tempore illo odit nisi sint aliquam deserunt maiores eos aspernatur asperiores ex commodi doloremque, similique iste accusamus accusantium repellat?</p>
+                                <p>As a new Full Stack Developer, ready to embark on an exhilarating journey in the world of web development. Armed with a passion for technology and a firm grasp of both front-end and back-end technologies, I am eager to craft immersive digital experiences that captivate users and push the boundaries of what is possible. Through continuous learning, creative problem-solving, and a tenacious spirit.</p>
 
                                 <ul className='team-icon'>
 
                                     <li><a href="#" className='twitter'>
-                                        <i class="materials-icon"><TwitterIcon /></i>
+                                        <i class="materials-icon"><FacebookOutlinedIcon /></i>
                                     </a></li>
                                     <li><a href="#" className='facebook'>
-                                        <i class="materials-icon"><FacebookOutlinedIcon /></i>
+                                        <i class="materials-icon"><InstagramIcon /></i>
                                     </a></li>
                                     <li><a href="#" className='github'>
                                         <i class="materials-icon"><GitHubIcon /></i>
@@ -91,6 +109,9 @@ function AboutForm() {
 
                                 </ul>
                             </div>
+                            <a href="https://mfernandez0928.github.io/Eportfolio/" target="_blank">
+                                <Button> My Portfolio </Button>
+                            </a>
                         </div>
                     </div>
 

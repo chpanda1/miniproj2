@@ -1,14 +1,13 @@
 import React from 'react'
-import { UserCard, FlippingCard, FlippingCardBack, FlippingCardFront } from 'react-ui-cards';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import JavascriptIcon from '@mui/icons-material/Javascript';
 import HtmlIcon from '@mui/icons-material/Html';
 import CssIcon from '@mui/icons-material/Css';
+import { Paper, Typography, Button } from '@mui/material';
+import Carousel from 'react-material-ui-carousel';
 
 function Home() {
   return (
@@ -33,7 +32,7 @@ function Home() {
           <p className='fs-6'>We are a leading web design and development company dedicated to helping businesses establish a strong online presence. With our team of skilled professionals, we create stunning websites that not only showcase your brand but also drive results.</p>
         </div>
       </div>
-      <div className='row'>
+      <div className='row mb-3'>
         <div className='col-lg-6 col-md-6 text-start'>
           <div className='team-item jheight'>            
             <h1 className='text-bolder'>Mission  </h1>
@@ -53,18 +52,35 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className='row text-center mb-5'>
+        <div className='col-lg-12 col-md-12 mb-2'>
+          <h4>We provide a fun and healthy work place environment</h4>
+        </div>
+        <Carousel className='col-lg-12 col-md-12'>
+          {/* Change above line to <> and it works, maybe some issues in carousel */}
+          <div>
+            <img src="office1.jpg" alt="" className='jOfficeImg rounded-3'/>
+          </div>
+          <div>
+            <img src="office2.jpg" alt="" className='jOfficeImg rounded-3'/>
+          </div>
+          <div>
+            <img src="office3.jpg" alt="" className='jOfficeImg rounded-3'/>
+          </div> 
+          <div>
+            <img src="office4.jpg" alt="" className='jOfficeImg rounded-3'/>
+          </div>                                                           
+        </Carousel>
+      </div>
       <div className='row'>
-        <h5 className='text-center'>This Project is created using : </h5>
+        <h5 className='text-center'>Our Technologies </h5>
       </div>
       <div className='row text-center'>
-          <div className='col-lg-4 col-md-4'>
-            <h1><JavascriptIcon sx={{fontSize:'inherit'}}/></h1>
-          </div>
-          <div className='col-lg-4 col-md-4'>
-            <h1><HtmlIcon sx={{fontSize:'inherit'}}/></h1>
-          </div>
-          <div className='col-lg-4 col-md-4'>
-            <h1><CssIcon sx={{fontSize:'inherit'}}/></h1>
+          <div className='col-lg-12 col-md-12'>
+            <img src="tech1.jpg" alt="" />
+            <img src="tech2.jpg" alt="" />
+            <img src="tech3.jpg" alt="" />
+            <img src="tech4.jpg" alt="" />
           </div>
       </div>
     </div>
