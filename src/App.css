@@ -122,6 +122,11 @@ div .jheight {
   overflow-wrap: break-word;
 }
 
+.jOfficeImg {
+  height: 400px;
+  width: 800px;
+}
+
 @media screen  and (max-width: 720px){
 
   .jlogo {
@@ -136,6 +141,12 @@ div .jheight {
     height: 500px;
     overflow-wrap: break-word;
   }
+
+  .jOfficeImg {
+    height: 250px;
+    width: 500px;
+  }
+
 }
 
 @media screen  and (max-width: 900px){
