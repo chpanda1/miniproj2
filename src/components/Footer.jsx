@@ -23,21 +23,27 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className='sb_footer-links-div'>
-                        <h4>Resources</h4>
+                        <h4>Capabilities</h4>
                         <a href="/resource">
-                            <p>Resource Center</p>
+                            <p>Node.JS</p>
                         </a>
                         <a href="/resource">
-                            <p>Testimonials</p>
+                            <p>React & React Native</p>
                         </a>
                         <a href="/resource">
-                            <p>Ano ilalagay?</p>
+                            <p>Database: MySQL</p>
                         </a>
                     </div>
                     <div className='sb_footer-links-div'>
-                        <h4>Partners</h4>
+                        <h4>Our Services</h4>
                         <a href="/resource">
-                            <p>Ano ilalagay?</p>
+                            <p>Web Development</p>
+                        </a>
+                        <a href="/resource">
+                            <p>Product Design</p>
+                        </a>
+                        <a href="/resource">
+                            <p>Mobile Development</p>
                         </a>
                     </div>
                     <div className='sb_footer-links-div'>
@@ -69,7 +75,7 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className='sb_footer-below-links'>
-                        <a href='/terms'><div><p>Terms & Conditions</p></div></a>
+                        <a href='./TermsCondition.jsx'><div><p>Terms & Conditions</p></div></a>
                         <a href='/privacy'><div><p>Privacy</p></div></a>
                         <a href='/security'><div><p>Security</p></div></a>
                         <a href='/cookieDeclaration'><div><p>Cookie Declaration</p></div></a>
