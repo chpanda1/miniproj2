@@ -17,7 +17,8 @@ const Button = styled.button`
 `;
 
 function AboutForm() {
-    let message = `JEM Web Services is poised to become a prominent player in the website creation industry.`;
+    let message = `JEM Web Services is poised to become a prominent player in the website creation industry. We have a unique vision and values guiding us in a specific direction. Our experience and commitment to operational excellence guarantee successful deliveries. But we go beyond creating exceptional solutions – we aim to be your trusted business partner.
+`;
     return (
         <section className='section-white'>
             <div className='container'>
@@ -27,7 +28,7 @@ function AboutForm() {
                         <h2 className='section-title'>
                             The Team Behind JEM
                         </h2>
-                        <p className='section-subtitle'>{message}</p>
+                        <p class='section-subtitle'>Our story begins with three talented software developers whose unwavering passion for technology and determination to make something superior sparked the creation of JEM. Their diverse personalities help them see the business from different angles. Meet the visionaries who shaped the company’s path.</p>
                     </div>
 
                     <div className='col-sm-6 col-md-4'>
@@ -113,6 +114,11 @@ function AboutForm() {
                                 <Button> My Portfolio </Button>
                             </a>
                         </div>
+                    </div>
+                    <br />
+                    <div className='col-md-12 text-left'>
+                        <h2>Why are we unique?</h2>
+                        <p className='section-subtitle'>{message}</p>
                     </div>
 
                 </div>
